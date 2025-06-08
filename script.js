@@ -69,6 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelector(".about-me"),
     document.querySelector(".skills"),
     document.querySelector(".proyectos"),
+    document.querySelector(".formacion"),
   ];
 
   secciones.forEach((seccion) => {

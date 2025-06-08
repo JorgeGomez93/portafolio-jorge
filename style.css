@@ -264,6 +264,10 @@ header {
   filter: drop-shadow(0 0 15px var(--color-primario));
 }
 
+section {
+  scroll-margin-top: var(--altura-navbar);
+}
+
 /* === SOBRE MI ===*/
 .about-me,
 .about-me.visible {
@@ -277,7 +281,7 @@ header {
 }
 
 .texto-sobre-mi {
-  max-width: 80%;
+  width: min(90%, 1200px);
   margin: 0 auto;
   font-size: clamp(1.4rem, 2.2vw, 2rem);
   line-height: 1.6;
@@ -310,6 +314,11 @@ header {
   font-size: clamp(4rem, 4vw, 8rem);
   color: var(--color-primario);
   text-shadow: 0 0 0.5rem var(--color-primario);
+  max-width: min(90%, 1000px);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  word-break: break-word;
 }
 
 .proyectos-grid {
@@ -328,6 +337,7 @@ header {
   overflow: hidden;
   transition: transform 0.3s ease;
   max-width: 400px;
+  filter: drop-shadow(0 0 1px var(--color-primario));
 }
 
 .proyecto-card:hover {
@@ -336,7 +346,7 @@ header {
 
 .proyecto-card img {
   width: 100%;
-  height: 450px; /* O cualquier altura fija que decidas */
+  height: 450px;
   object-fit: cover;
 }
 
@@ -360,8 +370,54 @@ header {
   color: var(--color-primario);
 }
 
-section {
-  scroll-margin-top: var(--altura-navbar);
+/* === FORMACION Y CERTIFICACIONES === */
+
+.formacion {
+  background-color: var(--color-fondo);
+  text-align: center;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease, transform 1s ease;
+  will-change: opacity, transform;
+  padding: clamp(6rem, 10vw, 12rem) 2rem;
+}
+
+.formacion.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.formacion-grid {
+  width: min(90%, 1200px);
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.formacion-card {
+  background-color: var(--color-nav-bar);
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem var(--color-nav-bar);
+  padding: 2rem;
+  transition: transform 0.3s ease;
+  width: 100%;
+}
+
+.formacion-card:hover {
+  transform: translateY(-10px);
+}
+
+.formacion-card h3 {
+  margin: 0 0 1rem 0;
+  font-size: 2rem;
+  color: var(--color-primario);
+}
+
+.formacion-card p {
+  font-size: 1.6rem;
+  color: var(--color-secundario);
 }
 
 /* === RESPONSIVE ===*/
