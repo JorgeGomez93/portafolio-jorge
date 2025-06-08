@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jorge Gómez - Portafolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="variables.css" />
+    <link
+      rel="shortcut icon"
+      href="favicon_pack/favicon_32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="contenedor-header">
+      <!--Contenedor de logo, top-bar y menú hamburguesa-->
+      <div class="encabezado">
+        <!-- Botón Hamburguesa -->
+        <input
+          type="checkbox"
+          id="toggle-menu"
+          class="toggle-menu"
+          aria-label="Abrir menú"
+        />
+        <label for="toggle-menu" class="menu-icon" aria-label="Abrir menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <div class="barra-grid">
+          <div class="logo">
+            <a href="#"
+              ><img
+                src="favicon_pack/favicon_512x512.png"
+                alt="logo de bolirana"
+            /></a>
+          </div>
+
+          <nav aria-label="Menú principal" class="top-bar">
+            <ul class="menu">
+              <li><a href="#about-me">Sobre mi</a></li>
+              <li><a href="#skills">Habilidades informáticas</a></li>
+              <li><a href="#formacion">Formación y certificaciones</a></li>
+              <li><a href="#experiencia">Experiencia</a></li>
+              <li><a href="#proyectos">Proyectos personales</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="contenedor-portada">
+        <div class="columna-derecha">
+          <div class="avatar-portada">
+            <img
+              class="mi-foto"
+              src="assets/img/CV-Azul.jpg"
+              alt="Avatar Jorge"
+            />
+          </div>
+          <div class="iconos-sociales">
+            <a
+              href="https://www.linkedin.com/in/jorge-g%C3%B3mez-69902815a/"
+              target="_blank"
+              ><img src="assets/icon/linkedin.png" alt="LinkedIn"
+            /></a>
+            <a target="_blank" href="https://github.com/JorgeGomez93"
+              ><img src="assets/icon/github.png" alt="GitHub"
+            /></a>
+            <a target="_blank" href="mailto:gomezgarciajorgeomar@gmail.com"
+              ><img src="assets/icon/email.png" alt="Email"
+            /></a>
+            <a
+              href="assets/curriculum/Currículum Jorge Gómez.pdf"
+              download="Jorge-Gomez-CV.pdf"
+              ><img src="assets/icon/cv.png" alt="CV"
+            /></a>
+          </div>
+        </div>
+        <div class="separador-vertical"></div>
+        <div class="titulo-principal">
+          <h2 id="saludo"></h2>
+          <h1 id="nombre"></h1>
+          <h2 id="profesion"></h2>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!--Seccion Sobre mi-->
+      <section class="about-me" id="about-me">
+        <h2 class="titulo-seccion">Sobre mi</h2>
+        <p class="texto-sobre-mi">
+          Mi nombre es Jorge Gómez. Soy ingeniero informático y apasionado del
+          desarrollo web. A lo largo de mi formación he adquirido sólidos
+          conocimientos de programación y desarrollo de software, lo que me
+          permite crear aplicaciones web funcionales, escalables y centradas en
+          el usuario. Me gusta afrontar nuevos retos, aprender constantemente y
+          perfeccionar mis habilidades trabajando en proyectos reales que me
+          permiten seguir creciendo como desarrollador web.
+        </p>
+      </section>
+
+      <!--Seccion Skills-->
+      <section class="skills" id="skills">
+        <h2 class="titulo-seccion">Habilidades informáticas</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3>Frontend</h3>
+            <div class="icons">
+              <div class="icon-item">
+                <img src="assets/icon/html5.png" alt="HTML5" />
+                <p>HTML5</p>
+              </div>
+              <div class="icon-item">
+                <img src="assets/icon/css3.png" alt="CSS3" />
+                <p>CSS3</p>
+              </div>
+              <div class="icon-item">
+                <img src="assets/icon/javascript.png" alt="JavaScript" />
+                <p>JavaScript</p>
+              </div>
+              <div class="icon-item">
+                <img src="assets/icon/react.webp" alt="React" />
+                <p>React</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <h3>Backend / Programación</h3>
+            <div class="icons">
+              <div class="icon-item">
+                <img src="assets/icon/cpp.png" alt="C++" />
+                <p>C / C++</p>
+              </div>
+              <div class="icon-item">
+                <img src="assets/icon/python.png" alt="Python" />
+                <p>Python</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <h3>Bases de Datos</h3>
+            <div class="icons">
+              <div class="icon-item">
+                <img src="assets/icon/mysql.png" alt="MySQL" />
+                <p>MySQL</p>
+              </div>
+              <div class="icon-item">
+                <img src="assets/icon/mongodb.png" alt="MongoDB" />
+                <p>MongoDB</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <h3>Control de Versiones</h3>
+            <div class="icons">
+              <div class="icon-item">
+                <img src="assets/icon/git.png" alt="Git" />
+                <p>Git</p>
+              </div>
+
+              <div class="icon-item">
+                <img src="assets/icon/github.png" alt="GitHub" />
+                <p>GitHub</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seccion de proyectos -->
+      <section class="proyectos" id="proyectos">
+        <h2 class="titulo-seccion">Proyectos</h2>
+        <div class="proyectos-grid">
+          <!--Proyecto 1: Mi portafolio-->
+          <div class="proyecto-card">
+            <img src="assets/img/portafolio.png" alt="Mi Portafolio" />
+            <div class="proyecto-info">
+              <h3>Mi Portafolio</h3>
+              <p>
+                Proyecto personal desarrollado en HTML, CSS, JS puro y
+                animaciones personalizadas. Diseño responsive, efectos de
+                escritura y optimización visual.
+              </p>
+            </div>
+          </div>
+
+          <div class="proyecto-card">
+            <img
+              src="assets/img/TuBoliranaDigital.png"
+              alt="TuBoliranaDigital"
+            />
+            <div class="proyecto-info">
+              <h3>TuBoliranaDigital</h3>
+              <p>
+                Simulación digital de juego de bolirana con lógica de
+                puntuación, interacción de usuarios y sistema de penalización.
+                Desarrollado con lógica de control y programación de interfaces.
+              </p>
+            </div>
+          </div>
+
+          <div class="proyecto-card">
+            <img src="assets/img/yardzelle.png" alt="YardZelle" />
+            <div class="proyecto-info">
+              <h3>YardZelle</h3>
+              <p>
+                Plataforma de venta de garage online, gestionando publicaciones,
+                usuarios y catálogo de productos. Desarrollado en entornos web
+                modernos y orientado a la experiencia de usuario.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
