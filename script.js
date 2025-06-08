@@ -40,6 +40,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
   escribirLinea();
 
+  // Ajuste dinámico de altura navbar
+  function actualizarAlturaNavbar() {
+    const navbar = document.querySelector(".encabezado");
+    const altura = navbar.offsetHeight;
+    document.documentElement.style.setProperty(
+      "--altura-navbar",
+      `${altura}px`
+    );
+  }
+
+  window.addEventListener("load", actualizarAlturaNavbar);
+  window.addEventListener("resize", actualizarAlturaNavbar);
+
   // IntersectionObserver para las animaciones
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
