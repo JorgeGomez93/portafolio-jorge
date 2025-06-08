@@ -420,6 +420,20 @@ section {
   color: var(--color-secundario);
 }
 
+.logos-escuela {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logos-escuela img {
+  width: clamp(50px, 10vw, 100px);
+  height: auto;
+  /* filter: drop-shadow(0 0 0.5rem var(--color-primario));
+  transition: transform 0.3s ease; */
+}
+
 /* === RESPONSIVE ===*/
 @media (max-width: 768px) {
   .contenedor-header {
