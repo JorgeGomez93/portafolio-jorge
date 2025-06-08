@@ -141,7 +141,7 @@ header {
 
 .titulo-principal h1 {
   margin: 0;
-  font-size: clamp(4rem, 10vw, 8rem);
+  font-size: clamp(4rem, 7vw, 8rem);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -150,13 +150,13 @@ header {
 }
 
 #saludo {
-  font-size: clamp(2rem, 5vw, 4rem);
+  font-size: clamp(2rem, 3.5vw, 4rem);
   margin: 0;
   color: var(--color-secundario);
 }
 
 #profesion {
-  font-size: clamp(2rem, 5vw, 4rem);
+  font-size: clamp(2rem, 3.5vw, 4rem);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -430,8 +430,6 @@ section {
 .logos-escuela img {
   width: clamp(50px, 10vw, 100px);
   height: auto;
-  /* filter: drop-shadow(0 0 0.5rem var(--color-primario));
-  transition: transform 0.3s ease; */
 }
 
 /* === RESPONSIVE ===*/
