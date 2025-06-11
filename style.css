@@ -4,7 +4,7 @@
 }
 
 :root {
-  --altura-navbar: 8rem; /* Ajusta esto según el alto promedio de tu navbar */
+  --altura-navbar: 5rem;
 }
 
 html {
@@ -32,14 +32,16 @@ body {
 }
 
 header {
-  min-height: 100dvh;
+  min-height: calc(
+    100dvh + var(--altura-navbar)
+  );
   height: 100dvh;
   max-height: 100dvh;
   overflow: hidden;
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center; /* <-- esto es la clave para centrar verticalmente */
+  align-items: center;
   flex-direction: column;
 }
 
@@ -135,6 +137,7 @@ header {
 
 .columna-derecha {
   margin-right: 8rem;
+  align-self: center;
   opacity: 0;
   animation: fadeSlideIn 4s ease forwards;
 }
@@ -221,7 +224,7 @@ header {
   gap: 2rem;
   justify-items: center;
   align-items: stretch;
-  margin: 0 auto; /* <-- esta línea centra el bloque */
+  margin: 0 auto;
 }
 
 .skill-card {
