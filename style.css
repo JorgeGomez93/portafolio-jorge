@@ -183,7 +183,7 @@ header {
   width: 80%;
   height: auto;
   border-radius: 50%;
-  filter: drop-shadow(0 0 15px var(--color-primario));
+
   object-fit: cover;
 }
 
